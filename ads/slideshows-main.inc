@@ -1,1 +1,0 @@
-<p style="color:#990000; font-size:18px; margin:10px;">URGENT - I need the editorial promo for this space from Chad</p>
