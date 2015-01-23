@@ -1,20 +1,5 @@
 # Build and Release Folders
-ads/
-classes/
-config/
-controllers/
-css/
-images/
-includes/
-index.php
-newsletter-survey.html
-preview-files/
-preview.php
-preview2.php
-promo.html
-templates/
-views/
-widgets/
+
 
 # Other files and folders
 .settings/
