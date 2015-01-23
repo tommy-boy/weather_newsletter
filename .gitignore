@@ -2,22 +2,22 @@
 bin/
 bin-debug/
 bin-release/
-/ads
-/classes
-/config
-/controllers
-/css
-/images
-/includes
+ads/
+classes/
+config/
+controllers/
+css/
+images/
+includes/
 index.php
 newsletter-survey.html
-/preview-files
+preview-files/
 preview.php
 preview2.php
 promo.html
-/templates
-/views
-/widgets
+templates/
+views/
+widgets/
 
 # Other files and folders
 .settings/
