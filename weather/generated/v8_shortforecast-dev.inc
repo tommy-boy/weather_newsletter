@@ -1,0 +1,1 @@
+<p>An area of low pressure will shift east and allow for high pressure to build in. Warming temperatures and sunny skies will lead us right into a gorgeous weekend with a high near 75 degrees.~Matt Pace</p>
