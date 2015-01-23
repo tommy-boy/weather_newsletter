@@ -1,0 +1,90 @@
+<!-- START -->
+<!-- AZCENTRAL FORECAST AND CURRENTS TABLE -->
+<table width="598" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="385" valign="top">
+
+<!-- WEATHER TABLE TRIAL -->
+<table width="385" border="0" cellpadding="2" cellspacing="0">
+<tr><td colspan="7" valign="top" span class="h3hed" id="Header">REPLACE_HEADER<br></td></tr>
+
+<tr>
+<td width="55" span class="sidebar">
+<b><span id="day0_name">REPLACE_DAY0_DAYNAME</span></b><br>
+<img name=day0_image width="46" height="35" src="REPLACE_DAY0_IMAGE"><br>
+<b>H:</b> <span id="day0_hi" >REPLACE_DAY0_HI</span><br>
+<b>L:</b> <span id="day0_lo">REPLACE_DAY0_LO</span><br>
+</td>
+
+<td width="55" span class="sidebar">
+<b><span id="day1_name">REPLACE_DAY1_DAYNAME</span></b><br>
+<img name=day1_image width="46" height="35" src="REPLACE_DAY1_IMAGE"><br>
+<b>H:</b> <span id="day1_hi" >REPLACE_DAY1_HI</span><br>
+<b>L:</b> <span id="day1_lo">REPLACE_DAY1_LO</span><br>
+</td>
+
+<td width="55" span class="sidebar">
+<b><span id="day2_name">REPLACE_DAY2_DAYNAME</span></b><br>
+<img name=day2_image width="46" height="35" src="REPLACE_DAY2_IMAGE"><br>
+<b>H:</b> <span id="day2_hi" >REPLACE_DAY2_HI</span><br>
+<b>L:</b> <span id="day2_lo">REPLACE_DAY2_LO</span><br>
+</td>
+
+<td width="55" span class="sidebar">
+<b><span id="day3_name">REPLACE_DAY3_DAYNAME</span></b><br>
+<img name=day3_image width="46" height="35" src="REPLACE_DAY3_IMAGE"><br>
+<b>H:</b> <span id="day3_hi" >REPLACE_DAY3_HI</span><br>
+<b>L:</b> <span id="day3_lo">REPLACE_DAY3_LO</span><br>
+</td>
+
+<td width="55" span class="sidebar">
+<b><span id="day4_name">REPLACE_DAY4_DAYNAME</span></b><br>
+<img name=day4_image width="46" height="35" src="REPLACE_DAY4_IMAGE"><br>
+<b>H:</b> <span id="day4_hi" >REPLACE_DAY4_HI</span><br>
+<b>L:</b> <span id="day4_lo">REPLACE_DAY4_LO</span><br>
+</td>
+
+<td width="55" span class="sidebar">
+<b><span id="day5_name">REPLACE_DAY5_DAYNAME</span></b><br>
+<img name=day5_image width="46" height="35" src="REPLACE_DAY5_IMAGE"><br>
+<b>H:</b> <span id="day5_hi" >REPLACE_DAY5_HI</span><br>
+<b>L:</b> <span id="day5_lo">REPLACE_DAY5_LO</span><br>
+</td>
+
+<td width="55" span class="sidebar">
+<b><span id="day6_name">REPLACE_DAY6_DAYNAME</span></b><br>
+<img name=day6_image width="46" height="35" src="REPLACE_DAY6_IMAGE"><br>
+<b>H:</b> <span id="day6_hi" >REPLACE_DAY6_HI</span><br>
+<b>L:</b> <span id="day6_lo">REPLACE_DAY6_LO</span><br>
+</td>
+</tr>
+</table>
+<!-- END WEATHER TABLE TRIAL -->
+
+</td>
+
+<td width="10"><img src="/imgs/clear.gif" width="10" height="10"></td>
+<td width="1" bgcolor="#666666" height="100%"><img src="/imgs/clear.gif" width="1" height="1"></td>
+<td width="10"><img src="/imgs/clear.gif" width="10" height="10"></td>
+
+<td width="192" valign="top">
+<span class="sidebar" id="narrative">REPLACE_NARRATIVE</span>
+</td>
+</tr>
+
+<tr>
+<td colspan="3"><img src="/imgs/clear.gif" width="10" height="10"></td>
+</tr>
+
+<tr>
+<td colspan="5">
+<img src="/imgs/black.gif" width="598" height="1">
+</td>
+</tr>
+
+</table>
+
+<!-- END AZCENTRAL FORECAST AND CURRENTS TABLE -->
+<!-- END -->
+
+

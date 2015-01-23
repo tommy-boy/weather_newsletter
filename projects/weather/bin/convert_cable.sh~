@@ -1,0 +1,26 @@
+#!/bin/sh
+
+echo "Converting...";
+cd /projects/weather/incoming/weatherstation || exit
+
+/usr/bin/find /projects/weather/incoming/weatherstation -type f -name "cable1.jpg" -exec /usr/X11R6/bin/convert -crop 600X390 cable1.jpg -resize 508X508 current.jpg \; || exit
+/usr/bin/find /projects/weather/incoming/weatherstation -type f -name "cable1.jpg" -exec /usr/X11R6/bin/convert -crop 600X390 cable1.jpg -resize 365X365 current_304.jpg \; || exit
+/usr/bin/find /projects/weather/incoming/weatherstation -type f -name "cable2.jpg" -exec /usr/X11R6/bin/convert -crop 600X390 cable2.jpg -resize 508X508 today.jpg \; || exit
+ echo "Done.";
+
+echo "Moving...";
+mv /projects/weather/incoming/weatherstation/current.jpg.0 /projects/weather/incoming/weatherstation/current.jpg || exit
+mv /projects/weather/incoming/weatherstation/current_304.jpg.0 /projects/weather/incoming/weatherstation/current_304.jpg || exit
+mv /projects/weather/incoming/weatherstation/today.jpg.0 /projects/weather/incoming/weatherstation/today.jpg || exit
+
+echo "Done.";
+
+echo "Cleaning up...";
+
+rm -f /projects/weather/incoming/weatherstation/cable1.jpg /projects/weather/incoming/weatherstation/cable2.jpg /projects/weather/incoming/weatherstation/current.jpg.* /projects/weather/incoming/weatherstation/current_304.jpg.* /projects/weather/incoming/weatherstation/today.jpg.* || exit
+mv /projects/weather/incoming/weatherstation/current.jpg /projects/weather/incoming/weatherstation/current_304.jpg /projects/weather/incoming/weatherstation/today.jpg /dev_www/azc/htdocs/weather/wsi_images || exit
+echo "Done";
+
+echo "Syncing live...";
+/projects/weather/bin/ftp_cable.exp
+echo "Done";

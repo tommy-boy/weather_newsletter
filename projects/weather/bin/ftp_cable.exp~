@@ -1,0 +1,34 @@
+#!/usr/bin/expect -f
+#
+set force_conservative 0  ;# set to 1 to force conservative mode even if
+			  ;# script wasn't run conservatively originally
+if {$force_conservative} {
+	set send_slow {1 .1}
+	proc send {ignore arg} {
+		sleep .1
+		exp_send -s -- $arg
+	}
+}
+
+set timeout 1
+spawn $env(SHELL)
+match_max 100000
+expect "$ "
+send -- "cd /dev_www/azc/htdocs/weather/wsi_images\r"
+expect "$ "
+send -- "ftp localhost\r"
+expect "ftp> "
+send -- "prompt\r"
+expect "ftp> "
+send -- "bin\r"
+expect "ftp> "
+send -- "cd /www_live/azc/htdocs/weather/wsi_images/\r"
+expect "ftp> "
+send -- "put current.jpg\r"
+expect "ftp> "
+send -- "put current_304.jpg\r"
+expect "ftp> "
+send -- "put today.jpg\r"
+expect "ftp> "
+send -- "exit\r"
+expect "$ "

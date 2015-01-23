@@ -1,0 +1,7 @@
+<div class="currentCol">
+	<img src="REPLACE_DAY_IMAGE" alt="" align="middle" />REPLACE_TEMPERATURE
+</div>
+<div class="tempsCol">
+	REPLACE_DAY_HI&deg; H<br />
+	REPLACE_DAY_LO&deg; L<br />
+</div>

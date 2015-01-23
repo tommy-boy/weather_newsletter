@@ -1,0 +1,54 @@
+<!-- START -->
+<!-- AZCENTRAL FORECAST AND CURRENTS TABLE -->
+      <div id="azc7DayForecast">
+        <div class="h3hed" style="margin: 5px 0;">REPLACE_HEADER</div>
+        <div class="weatherDay">
+          <b><span id="day0_name">REPLACE_DAY0_DAYNAME</span></b><br>
+          <img name="day0_image" width="46" height="35" src="REPLACE_DAY0_IMAGE" /><br>
+          <span id="day0_hi" class="hiTemp">REPLACE_DAY0_HI</span> / <span id="day0_lo" class="laTemp">REPLACE_DAY0_LO</span>
+        </div>
+        <div class="weatherDay">
+          <b><span id="day1_name">REPLACE_DAY1_DAYNAME</span></b><br>
+          <img name="day1_image" width="46" height="35" src="REPLACE_DAY1_IMAGE" /><br>
+          <span id="day1_hi" class="hiTemp">REPLACE_DAY1_HI</span> / <span id="day1_lo" class="laTemp">REPLACE_DAY1_LO</span>
+        </div>
+        <div class="weatherDay">
+          <b><span id="day2_name">REPLACE_DAY2_DAYNAME</span></b><br>
+          <img name="day2_image" width="46" height="35" src="REPLACE_DAY2_IMAGE" /><br>
+          <span id="day2_hi" class="hiTemp">REPLACE_DAY2_HI</span> / <span id="day2_lo" class="laTemp">REPLACE_DAY2_LO</span>
+        </div>
+        <div class="weatherDay">
+          <b><span id="day3_name">REPLACE_DAY3_DAYNAME</span></b><br>
+          <img name="day3_image" width="46" height="35" src="REPLACE_DAY3_IMAGE" /><br>
+          <span id="day3_hi" class="hiTemp">REPLACE_DAY3_HI</span> / <span id="day3_lo" class="laTemp">REPLACE_DAY3_LO</span>
+        </div>
+        <div class="weatherDay">
+          <b><span id="day4_name">REPLACE_DAY4_DAYNAME</span></b><br>
+          <img name="day4_image" width="46" height="35" src="REPLACE_DAY4_IMAGE" /><br>
+          <span id="day4_hi" class="hiTemp">REPLACE_DAY4_HI</span> / <span id="day4_lo" class="laTemp">REPLACE_DAY4_LO</span>
+        </div>
+        <div class="weatherDay">
+          <b><span id="day5_name">REPLACE_DAY5_DAYNAME</span></b><br>
+          <img name="day5_image" width="46" height="35" src="REPLACE_DAY5_IMAGE" /><br>
+          <span id="day5_hi" class="hiTemp">REPLACE_DAY5_HI</span> / <span id="day5_lo" class="laTemp">REPLACE_DAY5_LO</span>
+        </div>
+        <div class="weatherDay">
+          <b><span id="day6_name">REPLACE_DAY6_DAYNAME</span></b><br>
+          <img name="day6_image" width="46" height="35" src="REPLACE_DAY6_IMAGE" /><br>
+          <span id="day6_hi" class="hiTemp">REPLACE_DAY6_HI</span> / <span id="day6_lo" class="laTemp">REPLACE_DAY6_LO</span>
+        </div>
+      </div>
+      <div id="weatherUpdates">
+        <div class="WUText">REPLACE_NARRATIVE</div>
+        <div class="h3hed" style="margin: 0 0 15px 0;">get weather</div>
+        <form action=http://hosted.ap.org/dynamic/external/wunderground.com/cgi-bin/findweather/getForecast method=GET>
+          <input type="hidden" name="SITE" value="AZPHG" />
+          <input type="hidden" name="SECTION" value="WEATHER" />
+          <input type="text" value="Enter any city, state or ZIP, or country" class="weatherSearch" name="query" size="20" maxlength="200" onfocus="this.value='';" />
+          <input type="hidden" name="brand" value="ap" />
+          <input type="image" src="/imgs/button_bluebggo.gif" width="23" height="13" border="0" style="float: left; margin-top: 3px;" />
+        </form>
+        <br clear="all" />
+      </div>
+<!-- END AZCENTRAL FORECAST AND CURRENTS TABLE -->
+<!-- END -->

@@ -1,0 +1,23 @@
+<div class="weather-traffic-info floatLeft">
+        <p id="currentWeather">
+                <img src="REPLACE_DAY0_IMAGE" alt="REPLACE_DAY0_ALTTEXT" width="50" height="42" border="0" />
+                <strong>REPLACE_DAY0_DAYOFWEEK</strong><br />
+                REPLACE_DAY0_HI &deg; / REPLACE_DAY0_LO &deg;<br />
+                REPLACE_DAY0_DESCRIPTION <br />
+        </p>
+        <p>
+                <img src="REPLACE_DAY1_IMAGE" alt="REPLACE_DAY1_ALTTEXT" width="50" height="42" border="0" />
+                <strong>REPLACE_DAY1_DAYOFWEEK</strong><br />
+                REPLACE_DAY1_HI &deg; / REPLACE_DAY1_LO &deg;<br />
+                REPLACE_DAY1_DESCRIPTION<br />
+        </p>
+</div>
+<div class="weather-traffic-info floatRight">
+        <ul>
+                <li><a href="/weather/">7-day forecast</a></li>
+                <li><a href="/weather/">Weather Plus live</a></li>
+                <li><a href="/weather/articles/rloop.html">Radar</a></li>
+                <li><a href="/weather/">Arizona outlook &raquo;</a></li>
+        </ul>
+        <!--#include virtual="/incs/1/ad88x33_1.inc"-->
+</div>

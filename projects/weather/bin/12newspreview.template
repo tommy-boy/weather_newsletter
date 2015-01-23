@@ -1,0 +1,31 @@
+<!-- 12news Weather Preview Box -->
+<div class="alignLeft column">
+<div class="weatherTrafficPrevTopper"></div>
+<div id="weatherTrafficPrev" class="bg-blue">
+<span class="heading">Weather</span>
+<div class="inset hz-shadow">
+<div class="weatherNow">
+RIGHT NOW<br />
+REPLACE_CURRENTWEATHER
+<div style="clear:both"></div>
+</div>
+</div>
+<div class="threeDayCol">
+<span class="header">REPLACE_DAY0_DAYNAME</span>
+<a href="/weather/"><img src="REPLACE_DAY0_IMAGE"></a>
+<span class="high">REPLACE_DAY0_HI</span> / <span class="low">REPLACE_DAY0_LO</span>
+</div>
+<div class="threeDayCol">
+<span class="header">REPLACE_DAY1_DAYNAME</span>
+<a href="/weather/"><img src="REPLACE_DAY1_IMAGE"></a>
+<span class="high">REPLACE_DAY1_HI</span> / <span class="low">REPLACE_DAY1_LO</span>
+</div>
+<div class="threeDayCol">
+<span class="header">REPLACE_DAY2_DAYNAME</span>
+<a href="/weather/"><img src="REPLACE_DAY2_IMAGE"></a>
+<span class="high">REPLACE_DAY2_HI</span> / <span class="low">REPLACE_DAY2_LO</span>
+</div>
+<div class="forecastLink"><a href="/weather/">Full Forecast &raquo;</a></div>
+</div>
+</div>
+<!-- end 12news Weather Preview Box -->

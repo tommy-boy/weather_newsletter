@@ -1,0 +1,25 @@
+<table cellpadding="0" cellspacing="0" border="0">  
+<tr valign="top">    
+<td width="4" bgcolor="#FFFFFF"><img src="/imgs/clear.gif" width="4" height="4" alt=""></td>
+<td width="50" class="sidebar" bgcolor="#FFFFFF"><b>REPLACE_DAY1_DAYNAME</b><br><img src="REPLACE_DAY1_IMAGE" width="46" height="35" border="0" alt=""><br>
+<b>H:</b> REPLACE_DAY1_HI<br>   <b>L:</b> REPLACE_DAY1_LO</td>
+<!-- white spacer column -->
+<td width="4" bgcolor="#FFFFFF"><img src="/imgs/clear.gif" width="4" height="4" alt=""></td>
+<!-- grey line -->
+<td width="1" bgcolor="#666666"><img src="/imgs/clear.gif" width="1" height="1"></td>
+<!-- white spacer column -->
+<td width="4" bgcolor="#FFFFFF"><img src="/imgs/clear.gif" width="4" height="4" alt=""></td>    
+<td width="50" class="sidebar" bgcolor="#FFFFFF"><b>REPLACE_DAY2_DAYNAME</b><br><img src="REPLACE_DAY2_IMAGE" width="46" height="35" border="0" alt=""><br>
+<b>H:</b> REPLACE_DAY2_HI<br><b>L:</b> REPLACE_DAY2_LO</td>
+<!-- white spacer column -->
+<td width="4" bgcolor="#FFFFFF"><img src="/imgs/clear.gif" width="4" height="4" alt=""></td>
+<!-- grey line -->
+<td width="1" bgcolor="#666666"><img src="/imgs/clear.gif" width="1" height="1"></td>
+<!-- white spacer column -->
+<td width="4" bgcolor="#FFFFFF"><img src="/imgs/clear.gif" width="4" height="4" alt=""></td>    
+<td width="50" class="sidebar" bgcolor="#FFFFFF"><b>REPLACE_DAY3_DAYNAME</b><br><img src="REPLACE_DAY3_IMAGE" width="46" height="35" border="0" alt=""><br>
+<b>H:</b> REPLACE_DAY3_HI<br><b>L:</b> REPLACE_DAY3_LO</td>
+<td width="4" bgcolor="#FFFFFF"><img src="/imgs/clear.gif" width="4" height="4" alt="">
+</td>
+</tr>
+</table>

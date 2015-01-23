@@ -1,0 +1,19 @@
+<!-- START -->
+<!-- AZCENTRAL FORECAST AND CURRENTS TABLE -->
+
+<h3>REPLACE_HEADER</h3>
+<div id="weatherDailyForecasts" class="clearfix">
+	<ul>
+		<li><span class="weatherDay">REPLACE_DAY0_DAYNAME</span><br /><span class="weatherHigh">REPLACE_DAY0_HI</span> / REPLACE_DAY0_LO<img src="REPLACE_DAY0_IMAGE" alt="" width="46" height="38" border="0" /></li>
+		<li><span class="weatherDay">REPLACE_DAY1_DAYNAME</span><br /><span class="weatherHigh">REPLACE_DAY1_HI</span> / REPLACE_DAY1_LO<img src="REPLACE_DAY1_IMAGE" alt="" width="46" height="38" border="0" /></li>
+		<li><span class="weatherDay">REPLACE_DAY2_DAYNAME</span><br /><span class="weatherHigh">REPLACE_DAY2_HI</span> / REPLACE_DAY2_LO<img src="REPLACE_DAY2_IMAGE" alt="" width="46" height="38" border="0" /></li>
+		<li><span class="weatherDay">REPLACE_DAY3_DAYNAME</span><br /><span class="weatherHigh">REPLACE_DAY3_HI</span> / REPLACE_DAY3_LO<img src="REPLACE_DAY3_IMAGE" alt="" width="46" height="38" border="0" /></li>
+		<li><span class="weatherDay">REPLACE_DAY4_DAYNAME</span><br /><span class="weatherHigh">REPLACE_DAY4_HI</span> / REPLACE_DAY4_LO<img src="REPLACE_DAY4_IMAGE" alt="" width="46" height="38" border="0" /></li>
+		<li class="lastLI"><span class="weatherDay">REPLACE_DAY5_DAYNAME</span><br /><span class="weatherHigh">REPLACE_DAY5_HI</span> / REPLACE_DAY5_LO<img src="REPLACE_DAY5_IMAGE" alt="" width="46" height="38" border="0" /></li>
+	</ul>
+</div>
+<h3>DAILY FORECAST</h3>
+<p>REPLACE_NARRATIVE</p>
+
+<!-- END AZCENTRAL FORECAST AND CURRENTS TABLE -->
+<!-- END -->

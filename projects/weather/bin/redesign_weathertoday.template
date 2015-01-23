@@ -1,0 +1,7 @@
+<h3>Today</h3>
+<div id="weatherTodayBug">
+	<img src="REPLACE_DAY_IMAGE" alt="" width="60" height="50" border="0" id="weatherBigIcon" class="png" />
+	<small>Right Now</small>
+	<div id="weatherCurrentTemp">REPLACE_TEMPERATURE</div>
+	<div id="weatherForecast">Forecast<br /><span style="color: #fff;">High: REPLACE_DAY_HI Low: REPLACE_DAY_LO</span></div>
+</div>

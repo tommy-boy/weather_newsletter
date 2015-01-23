@@ -1,0 +1,88 @@
+#!/usr/local/bin/php -q
+<?
+set_time_limit(830);
+
+require ("/www/php.inc/mysql_connect.inc");
+mysql_select_db("weatherdata");
+$url[] = "http://iwin.nws.noaa.gov/iwin/IN/hourly.html";
+// 2006-09-07 timing out    $url[] = "http://www.phx.noaa.gov/data/phxswraz.html";
+$url[] = "http://iwin.nws.noaa.gov/iwin/AZ/hourly.html";
+// 2006-09-07 timing out    $url[] = "http://twister.sbs.ohio-state.edu/text/obs/roundup/ASUS45.KPHX";
+//$url[] = "http://asp1.sbs.ohio-state.edu/text/wxascii/roundup/ASUS45.KPHX";
+
+$cities[] = strtoupper("phoenix");
+$cities[] = strtoupper("tucson");
+$cities[] = strtoupper("flagstaff arpt");
+//$cities[] = strtoupper("grand canyon");
+//$cities[] = strtoupper("fort wayne");
+//$cities[] = strtoupper("bullhead city");
+//$cities[] = strtoupper("chandler");
+//$cities[] = strtoupper("deer valley");
+//$cities[] = strtoupper("douglas");
+//$cities[] = strtoupper("gila bend");
+//$cities[] = strtoupper("glendale");
+//$cities[] = strtoupper("goodyear");
+//$cities[] = strtoupper("kingman");
+//$cities[] = strtoupper("mesa");
+//$cities[] = strtoupper("page");
+//$cities[] = strtoupper("prescott");
+//$cities[] = strtoupper("safford");
+//$cities[] = strtoupper("scottsdale");
+//$cities[] = strtoupper("sierra vista");
+//$cities[] = strtoupper("winslow");
+//$cities[] = strtoupper("yuma");
+
+foreach($cities as $value) {
+  $citynames[$value]=ucwords(strtolower($value));
+}
+$citynames["FLAGSTAFF ARPT"]="Flagstaff";
+
+
+for ($urlcount=0; $urlcount<count($url); $urlcount++)  {
+  if (!$report = file($url[$urlcount]))  {
+    echo "Failed to update $url[$urlcount]\n";
+    continue;
+  } else {
+  	#echo "Processing: $url[$urlcount]\n";
+  }
+  
+  for ($count=0; $count<count($report); $count++)  {
+    $line = ereg_replace("\r\n","",$report[$count]);
+    for ($citycount=0; $citycount<count($cities); $citycount++)  {
+      if (!$cityflags[$cities[$citycount]])  {
+        if (eregi("^ *$cities[$citycount]",$line))  {
+          #echo "$line\n";
+          $line = ereg_replace("LGT ","",$line);
+          while (ereg("  ",$line))
+            $line = ereg_replace("  "," ",$line);
+          
+          $line = ereg_replace("^ ", "", $line);
+          
+          if (ereg(" ",$cities[$citycount]))  {
+            $line = ereg_replace("$cities[$citycount] ","",$line);
+            $city = $cities[$citycount];
+            list($conditions,$temperature,$dewpoint,$rh,$wind,$pressure,$remarks) = explode(" ",$line);
+          } else {
+            list($city,$conditions,$temperature,$dewpoint,$rh,$wind,$pressure,$remarks) = explode(" ",$line);
+          }
+          
+          if (($conditions != "NOT") && (($temperature != 'N/A') || ($temperature != 'AVBL')))  {
+	    
+            $sql="REPLACE INTO weatherdata VALUES ('$city','$citynames[$city]','$conditions','$conditionnames[$conditions]','$temperature','$dewpoint','$rh','$wind','$pressure')";
+            mysql_query($sql);
+            mysql_query("REPLACE INTO `waste_of_space` VALUES ('".mysql_escape_string($conditions)."')");
+            $cityflags[$cities[$citycount]] = 1;
+          }
+        }
+      }
+    }
+  }
+  
+  if ($cityflags["PHOENIX"] && $cityflags["FLAGSTAFF ARPT"] && $cityflags["TUCSON"])  {
+    break;
+  }
+  
+}
+
+#fclose($fp);
+?>
