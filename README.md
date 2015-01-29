@@ -34,3 +34,5 @@ Classes (classes to use are defined in the config.php file)
 
 
 Widgets (widget view is loaded when the class is instantiated)
+
+Newsletter can be previewed http://devwww.azcentral.com/email/newsletters/preview.php?url=content/weather/main
